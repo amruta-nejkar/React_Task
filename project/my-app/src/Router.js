@@ -1,9 +1,6 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import {Header} from "./Module";
-import {AboutUsPage} from './page';
-import {DashboardPage} from './page';
-
-
+import {AboutUsPage,DashboardPage} from './page';
 const Router =()=>{
     return(
         <BrowserRouter>

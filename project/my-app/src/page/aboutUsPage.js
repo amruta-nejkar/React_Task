@@ -4,7 +4,7 @@ const AboutUsPage=()=>{
   return(
     <div className="wrapper">
        <header>
-           {/* <img className="arrow" src={arrow}></img> */}
+           
            <div className="imgHolder">
            <img className="personImg" src={img1}></img>
            <p>f_karayannopoulops@klclawfirm.com</p>
@@ -21,7 +21,7 @@ const AboutUsPage=()=>{
                <h1>Languages:</h1>
                <h5>GREEK,ENGLISH,FRENCH,ITALIAN</h5>
                <div className="card">
-               {/* <img className="downloadImg" src ={download}></img> */}
+              
                <h4>DOWNLOAD V.CARD</h4>
                 </div>
                
