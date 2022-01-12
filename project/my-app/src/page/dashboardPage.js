@@ -1,4 +1,4 @@
-import { Button ,Counter} from "../Component/index";
+import { Button ,Counter,} from "../Component/index";
 
 const DashboardPage=()=>{
     return(
