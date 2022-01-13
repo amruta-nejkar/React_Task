@@ -7,8 +7,6 @@ const DashboardPage=()=>{
              <Header/>
              <Counter/> 
              <SelfCounter/>
-            
-            
            <h1>WelCome To Dashboard</h1></div>           
     );
 }
