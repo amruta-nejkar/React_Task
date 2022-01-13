@@ -1,24 +1,28 @@
 import { useState } from "react";
 import { useEffect } from "react";
-const SelfCounter=() => {
-    const [counter, setCounter] = useState(0);
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-          if(counter<20){
-            setCounter(counter + 1);
+
+const SelfCounter =()=>{
+  const [count,setCount] =useState(0);
+  const Updater =()=>{
+      let initialcount= 0;
+      const interval = setInterval(()=>{
+          if(initialcount<20){
+            initialcount= initialcount+1;
           }
           else{
-            setCounter(0)
-          }        
-      }, 1000);
-  
-      return () => {
-        clearInterval(interval);
-      };
-    });
-  
-    return (
-    <h1>count:{counter}</h1>);
-  };
+            initialcount=0
+              clearInterval(interval);
+          }
+          setCount(initialcount);
+      },1000)
+  }
+  useEffect(()=>{
+      Updater();
+  },[])
+  return(
+      <>
+          <h1>Counts: {count} </h1>
+      </>
+  )
+}
 export default SelfCounter;
