@@ -2,7 +2,7 @@ import {useState} from "react"
 import {useNavigate} from "react-router-dom"
 import { InputField,Lable} from "../Component/styled";
 const LoginPage =()=>{
-
+    
     const [users,setUsers] =useState(
         {
             name: "",
@@ -24,7 +24,6 @@ const LoginPage =()=>{
     const redirectHandler =() =>{
         navigate('/profile',{state: {users}})
     }
-
     return(
         <>
              <div>
@@ -40,5 +39,4 @@ const LoginPage =()=>{
         </>
     )
 }
-
 export default LoginPage;
